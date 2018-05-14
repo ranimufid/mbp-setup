@@ -40,6 +40,16 @@ git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
 echo "Setting ZSH as shell..."
 chsh -s /bin/zsh
 
+echo "Installing Powerline fonts"
+# clone
+cd /tmp && git clone https://github.com/powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
+
 echo "Please setup and sync Dropbox, and then run this script again."
 read -p "Press [Enter] key after this..."
 
