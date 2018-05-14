@@ -26,11 +26,6 @@ echo "Cleaning up brew..."
 brew cask cleanup
 brew cleanup
 
-echo "Git config"
-
-git config --global user.name "rani"
-git config --global user.email #CHANGEME
-
 echo "Installing npm packages"
 npm install -g serverless yarn
 
